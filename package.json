@@ -1,0 +1,22 @@
+{
+  "name": "webpack-inicial",
+  "version": "1.0.0",
+  "description": "paquete básico para crear un proyecto con webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpack.config.js --watch",
+    "build": "webpack --config webpack.prod.config.js"
+  },
+  "author": "Josetxu Sancha",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

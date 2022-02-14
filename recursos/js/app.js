@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelector("button"),t=document.querySelector("input");e.addEventListener("click",(function(){var e,n;e=t.value,(n=document.createElement("h1")).innerText="".concat(e),document.body.append(n)}))})();
