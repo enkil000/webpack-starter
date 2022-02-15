@@ -4,7 +4,7 @@ module.exports = {
 	mode: 'development',
 	output: {
 		filename: './js/app.js',
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'dist/'),
 	},
 	module: {
 		rules: [
