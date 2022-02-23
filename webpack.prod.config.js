@@ -2,15 +2,19 @@ const path = require('path')
 
 module.exports = {
 	mode: 'production',
+	entry: {
+		bundle: { import: ['./src/index.js', './src/pagina.js'] }
+	},
 	output: {
-		filename: './js/app.js',
-		path: path.resolve(__dirname, 'dist'),
+		clean: true,
+		filename: './js/[name].min.js',
+		path: path.resolve(__dirname, 'build/'),
 	},
 	module: {
 		rules: [
 			{
 				test: /\.m?js$/,
-                    use: {
+				use: {
 					loader: 'babel-loader',
 					options: {
 						presets: ['@babel/preset-env'],
